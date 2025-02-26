@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+	@apply bg-gray-900 text-gray-300;
+}
+
+.card {
+	@apply flex max-w-[20%] flex-col items-center rounded-xl bg-gray-700 px-3 py-2;
+}
+
+.header-2 {
+	@apply text-xl font-bold;
+}
+
+.pop-up {
+	@apply flex max-w-[30%] justify-center rounded-full text-lg;
+}
+
+.crit-success {
+	@apply bg-green-600;
+}
+
+.success {
+	@apply bg-blue-600;
+}
+
+.failure {
+	@apply bg-orange-600;
+}
+
+.crit-failure {
+	@apply bg-red-600;
+}
